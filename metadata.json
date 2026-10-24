@@ -1,0 +1,8 @@
+{
+  "name": "WRU Dispatch CPF v2",
+  "description": "Full-stack sync manager that retrieves fleet data from GpsGate, transforms it to custom JSON, and securely transmits it to a target server with logs, retries, and manual overrides.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

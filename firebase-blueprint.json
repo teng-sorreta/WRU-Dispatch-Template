@@ -1,0 +1,98 @@
+{
+  "collections": {
+    "trips": {
+      "schema": {
+        "id": "string",
+        "deliveryDate": "string",
+        "orderNo": "string",
+        "shipTo": "string",
+        "recordDate": "string",
+        "createdBy": "string",
+        "approvedResult": "string",
+        "approveDate1": "string",
+        "approveDate2": "string",
+        "referenceSaleOrderNo": "string",
+        "issueSlipNo": "string",
+        "createIssuedSlip": "string",
+        "userCreateIssuedSlip": "string",
+        "invoiceNo": "string",
+        "userCreateInvoiceNo": "string",
+        "customerCode": "string",
+        "localName": "string",
+        "licensePlate": "string",
+        "cancelFlag": "string",
+        "documentNo": "string",
+        "remark": "string",
+        "cancelDate": "string",
+        "statusValidDate": "string",
+        "statusDispatchDate": "string",
+        "statusEnrouteDate": "string",
+        "statusAtLocationDate": "string",
+        "statusDeliveredDate": "string",
+        "statusUndeliverableDate": "string",
+        "statusCancelledDate": "string",
+        "statusReturnedDate": "string",
+        "statusTurnaroundDate": "string",
+        "createdAt": "string",
+        "updatedAt": "string"
+      },
+      "rules": {
+        "read": "true",
+        "write": "true"
+      }
+    },
+    "logs": {
+      "schema": {
+        "id": "string",
+        "timestamp": "string",
+        "type": "string",
+        "status": "string",
+        "message": "string",
+        "details": "string"
+      },
+      "rules": {
+        "read": "true",
+        "write": "true"
+      }
+    },
+    "inbound_events": {
+      "schema": {
+        "id": "string",
+        "timestamp": "string",
+        "method": "string",
+        "headers": "object",
+        "query": "object",
+        "body": "any"
+      },
+      "rules": {
+        "read": "true",
+        "write": "true"
+      }
+    },
+    "config": {
+      "schema": {
+        "gpsgateUrl": "string",
+        "gpsgateAppId": "string",
+        "gpsgateUsername": "string",
+        "gpsgatePassword": "string",
+        "useGpsgateMock": "boolean",
+        "gpsgateToken": "string",
+        "gpsgateGroupId": "string",
+        "targetUrl": "string",
+        "targetAuthHeader": "string",
+        "targetAuthToken": "string",
+        "targetTimeout": "number",
+        "targetAuthType": "string",
+        "targetUsername": "string",
+        "targetPassword": "string",
+        "syncIntervalMinutes": "number",
+        "retryAttempts": "number",
+        "retryBackoffMs": "number"
+      },
+      "rules": {
+        "read": "true",
+        "write": "true"
+      }
+    }
+  }
+}
